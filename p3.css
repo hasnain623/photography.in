@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.mainbox{
+    background-image:url("photo.jpg");
+    height: 100vh;
+    background-size:cover;
+}
+.btn1{
+    color: antiquewhite;
+    font-size: 25px;
+    position:absolute;
+    left: 10px;
+    top: 0;
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px rgb(255,255, 255,0.5);
+    left: -300px;
+}
+.btn2{
+    color: antiquewhite;
+    font-size: 25px;
+    position: absolute;
+    left: 230px;
+}
+.sidebar #logo{
+    position: absolute;
+    left: 45px;
+    top:5px;
+    font-size: 15px;
+}
+ #sidebarlist ul{
+    position: absolute;
+    line-height: 50px;
+    width: 95%;
+    top: 60px;
+    left: 10px;
+} 
+.social{
+    position: absolute;
+    top:520px;
+    left: 40px;
+}
+.social ul i{
+    opacity: 0.5;
+    padding: 0px 5px 0px 5px;
+}
+.sidebar #logo a{
+    color:white;
+    text-decoration: none;
+}
+#sidebarlist ul li i,a{
+    color: white;
+    text-decoration: none;
+}
+#sidebar #sidebarlist{
+    position: absolute;
+    line-height: 50px;
+    width: 100%;
+    top: 80px;
+}
+#check{
+    opacity: 0;
+}
+#bt1:hover{
+    cursor: pointer;
+    font-size: 30px;
+}
+#sidebarlist ul li:hover{
+    box-shadow: 0px 0px 4px rgb(255,255, 255,0.5) ;
+}
+.social ul i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+#check:checked ~.sidebar{
+    left: 0;
+}
+#check:checked ~ .btn1 i{
+    opacity: 0;
+}
+/* @keyframes image{
+    0%{background-image: url("photo.jpg");}
+    50%{background-image: url("img2.jpg");}
+    100%{background-image: url("img4.jpg");} 
+} */
+
+
+
+
